@@ -13,10 +13,10 @@ ctest = testdll.test
 
 test = Test()
 
-print vars(test)
-print dir(test)
+print (vars(test))
+print (dir(test))
 
 ctest(ctypes.byref(test))
 print (test.num)
-print "From python: " + test.data.decode("utf-8")
+print ("From python: " + test.data.decode("utf-8"))
 
