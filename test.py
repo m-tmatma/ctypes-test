@@ -8,7 +8,7 @@ class Test(ctypes.Structure):
         ('data', ctypes.c_char * 10)
     ]
 
-testdll = ctypes.CDLL("test.so")
+testdll = ctypes.CDLL("./test.so")
 ctest = testdll.test
 
 test = Test()

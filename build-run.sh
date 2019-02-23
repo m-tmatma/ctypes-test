@@ -1,5 +1,5 @@
 #!/bin/sh
 
-gcc -shared -o test.so test.c
+gcc -fPIC -shared -o test.so test.c
 ./test.py
 
